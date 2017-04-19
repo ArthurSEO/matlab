@@ -15,7 +15,6 @@
 %Importando dados em tabela através do Matlab
 
 Train = readtable('train.csv','Format','%f%f%f%q%C%f%f%f%q%f%q%C');
-Train2 = readtable('train2.csv','Format','%f%f%f%q%C%f%f%f%q%f%q%C');
 
 Test = readtable('test.csv','Format','%f%f%q%C%f%f%f%q%f%q%C');
 disp(Train(1:6,[2:3 3:9 10:12])) % define dados mostrado na visualização
