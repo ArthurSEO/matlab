@@ -169,10 +169,5 @@ Test.AgeGroup = double(discretize(Test.Age, [0:10:20 65 80], ...
 % algoritmos, eu utilizei neste exemplo o Matlab.
 [trainClassifier,validationAccuracy] = trainClassifier(Train)
 
-% Código de submissão do algoritmo de decisao gerado automaticamente
 
-PassengerID = Test.PassengerId;
-Survived = (trainClassifier.predictFcn(Test))
-submissionx = table(PassengerID,Survived)
-writetable(submissionx,'submission5.csv')
 
